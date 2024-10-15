@@ -12,9 +12,11 @@ public class Tugas1 {
            tiket = input13.nextInt();
            
            if (tiket > 10) {
-            hargaAfterDiskon = hargaTiket * 0.85;
+            hargaAfterDiskon = hargaTiket * 0.85 * tiket;
            } else if (tiket > 4) {
-            hargaAfterDiskon = hargaTiket * 0.90;
+            hargaAfterDiskon = hargaTiket * 0.90 * tiket;
+           } else if (tiket > 0) {
+            hargaAfterDiskon = hargaTiket * tiket;
            } else if (tiket == 0) {
             System.out.println("Program dihentikan");
             break;
@@ -22,7 +24,7 @@ public class Tugas1 {
             System.out.println("Mohon masukkan angka yang valid");
             continue;
            }
-                
+           
            totalTiket += tiket;
            totalPenjualan += hargaAfterDiskon;
 
