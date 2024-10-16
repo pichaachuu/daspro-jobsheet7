@@ -13,10 +13,13 @@ public class Tugas1 {
            
            if (tiket > 10) {
             hargaAfterDiskon = hargaTiket * 0.85 * tiket;
+            System.out.println("Total yang harus dibayarkan adalah " + hargaAfterDiskon);
            } else if (tiket > 4) {
             hargaAfterDiskon = hargaTiket * 0.90 * tiket;
+            System.out.println("Total yang harus dibayar adalah " + hargaAfterDiskon);
            } else if (tiket > 0) {
             hargaAfterDiskon = hargaTiket * tiket;
+            System.out.println("Total yang harus dibayarkan adalah " + hargaAfterDiskon);
            } else if (tiket == 0) {
             System.out.println("Program dihentikan");
             break;
