@@ -26,6 +26,9 @@ public class Tugas2 {
                         System.out.println("Total yang harus dibayarkan adalah " + total);
                     }
                 }
+            } else {
+                System.out.println("Silahkan masukkan angka yang benar");
+                continue;
             }
         } while (jenis != 0);
 
