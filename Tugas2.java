@@ -16,11 +16,14 @@ public class Tugas2 {
 
                 if (durasi > 5) {
                     total += 12500;
+                    System.out.println("Total yang harus dibayarkan adalah " + total);
                 } else {
                     if (jenis == 1) {
                         total += durasi * 3000;
+                        System.out.println("Total yang harus dibayarkan adalah " + total);
                     } else if (jenis == 2) {
                         total += durasi * 2000;
+                        System.out.println("Total yang harus dibayarkan adalah " + total);
                     }
                 }
             }
