@@ -4,10 +4,10 @@ public class Tugas2 {
     public static void main(String[] args) {
         Scanner input13 = new Scanner(System.in);
 
-        int jenis, durasi, total = 0;
+        int jenis, durasi, total = 0, totalPenjualan = 0;
 
         do {
-            System.out.print("Masukkan jenis kendaraan (mobil = 1, motor = 2, 0 = keluar): ");
+            System.out.print("Masukkan jenis kendaraan (motor = 1, mobil = 2, 0 = keluar): ");
             jenis = input13.nextInt();
 
             if (jenis == 1 || jenis == 2) {
@@ -30,8 +30,10 @@ public class Tugas2 {
                 System.out.println("Silahkan masukkan angka yang benar");
                 continue;
             }
-        } while (jenis != 0);
 
-        System.out.println("Total biaya parkir: " + total);
+            totalPenjualan += total;
+           
+        } while (jenis != 0);
+        System.out.println("Total penjualanper hari adalah Rp." + totalPenjualan);
     }
 }
