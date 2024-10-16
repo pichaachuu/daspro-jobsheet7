@@ -20,9 +20,6 @@ public class Tugas1 {
            } else if (tiket > 0) {
             hargaAfterDiskon = hargaTiket * tiket;
             System.out.println("Total yang harus dibayarkan adalah " + hargaAfterDiskon);
-           } else if (tiket == 0) {
-            System.out.println("Program dihentikan");
-            break;
            } else {
             System.out.println("Mohon masukkan angka yang valid");
             continue;
@@ -32,7 +29,7 @@ public class Tugas1 {
            totalPenjualan += hargaAfterDiskon;
 
            
-        } while (true);
+        } while (tiket != 0);
 
         System.out.println("Total penjualan tiket: " + totalTiket);
         System.out.println("Total pendapatan penjualan: " + totalPenjualan);
